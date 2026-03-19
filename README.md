@@ -11,7 +11,6 @@ Proyecto de automatización de pruebas web para la página [SauceDemo](https://w
 
 ## Arquitectura y Patrones Aplicados
 * Page Object Model (POM)
-* Fluent Page Object Pattern
 * Page Factory
 * Data-Driven
 * Configuración de entornos y URLs a través del archivo `testng.xml`
