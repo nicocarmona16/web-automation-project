@@ -15,6 +15,9 @@ public class InventoryPage extends BasePage{
     @FindBy(className = "shopping_cart_link")
     private WebElement cartIcon;
 
+    @FindBy(className = "btn_inventory")
+    private List<WebElement> addToCartButtons;
+
     public InventoryPage(WebDriver driver) {
         super(driver);
     }
@@ -27,5 +30,11 @@ public class InventoryPage extends BasePage{
 
     public void goToCart() {
         cartIcon.click();
+    }
+
+    public void addMultipleProducts(int count) {
+        for (int i = 0; i < count; i++) {
+            addToCartButtons.get(i).click();
+        }
     }
 }
