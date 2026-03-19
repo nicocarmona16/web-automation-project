@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class PurchaseProductTest extends BaseTest {
 
-    @Test
+    @Test(testName = "Purchase product")
     public void purchaseProductTest() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("standard_user", "secret_sauce");
