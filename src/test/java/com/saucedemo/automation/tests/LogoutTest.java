@@ -10,9 +10,8 @@ public class LogoutTest extends BaseTest{
     @Test(testName = "Logout")
     public void logoutTest() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("standard_user", "secret_sauce");
+        InventoryPage inventoryPage = loginPage.login("standard_user", "secret_sauce");
 
-        InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.logout();
 
         Assert.assertTrue(loginPage.isLoginButtonDisplayed(), "didn't redirect to the login page");

@@ -9,9 +9,7 @@ public class PurchaseProductTest extends BaseTest {
     @Test(testName = "Purchase product")
     public void purchaseProductTest() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("standard_user", "secret_sauce");
-
-        InventoryPage inventoryPage = new InventoryPage(driver);
+        InventoryPage inventoryPage = loginPage.login("standard_user", "secret_sauce");
         inventoryPage.clickRandomProduct();
 
         ProductDetailPage productPage = new ProductDetailPage(driver);
