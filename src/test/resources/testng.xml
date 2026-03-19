@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemo Automation Suite">
+    <test name="Tetst">
+        <classes>
+            <class name="com.saucedemo.automation.tests.PurchaseProductTest"/>
+            <class name="com.saucedemo.automation.tests.RemoveCartElementsTest"/>
+            <class name="com.saucedemo.automation.tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
